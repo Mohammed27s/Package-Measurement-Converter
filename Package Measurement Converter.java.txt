@@ -1,0 +1,58 @@
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
+//Package Measurement Converter
+public class PackageMeasurementConverter {
+
+    public static void main(String[] args){
+
+
+        Map<Character, Integer> measurementMap = new HashMap<>();
+
+        measurementMap.put('a', 1);
+        measurementMap.put('b', 2);
+        measurementMap.put('c', 3);
+        measurementMap.put('d', 4);
+        measurementMap.put('e', 5);
+        measurementMap.put('f', 6);
+        measurementMap.put('g', 7);
+        measurementMap.put('h', 8);
+        measurementMap.put('i', 9);
+        measurementMap.put('j', 10);
+        measurementMap.put('k', 11);
+        measurementMap.put('l', 12);
+        measurementMap.put('m', 13);
+        measurementMap.put('n', 14);
+        measurementMap.put('o', 15);
+        measurementMap.put('p', 16);
+        measurementMap.put('q', 17);
+        measurementMap.put('r', 18);
+        measurementMap.put('s', 19);
+        measurementMap.put('t', 20);
+        measurementMap.put('y', 21);
+        measurementMap.put('v', 22);
+        measurementMap.put('w', 23);
+        measurementMap.put('h', 24);
+        measurementMap.put('y', 25);
+        measurementMap.put('z', 26);
+
+
+
+        Character[] alphaSearch = new Character[]{'a','b','c','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','y','v','w','h','y', 'z'};
+
+        Set<Set<Character>> input1 = new HashSet<>();
+        input1.add('a');
+
+        if()
+
+
+
+
+
+
+
+
+    }
+}
