@@ -1,16 +1,18 @@
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 //Package Measurement Converter
 public class PackageMeasurementConverter {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
+        
+        System.out.println("The first input for aa: " + Arrays.toString(measurementFunc("aa")));
+        System.out.println("The second input for abbcc: " + Arrays.toString(measurementFunc("abbcc")));
+        System.out.println("The third input for dz_a_aazzaaa: " + Arrays.toString(measurementFunc("dz_a_aazzaaa")));
+    }
 
-
+    public static int[] measurementFunc(String input) {
+        
         Map<Character, Integer> measurementMap = new HashMap<>();
-
         measurementMap.put('a', 1);
         measurementMap.put('b', 2);
         measurementMap.put('c', 3);
@@ -31,28 +33,21 @@ public class PackageMeasurementConverter {
         measurementMap.put('r', 18);
         measurementMap.put('s', 19);
         measurementMap.put('t', 20);
-        measurementMap.put('y', 21);
+        measurementMap.put('u', 21);
         measurementMap.put('v', 22);
         measurementMap.put('w', 23);
-        measurementMap.put('h', 24);
+        measurementMap.put('x', 24);
         measurementMap.put('y', 25);
         measurementMap.put('z', 26);
+        measurementMap.put('_', 0);
 
+        int[] output = new int[input.length()];
 
+        for (int i = 0; i < input.length(); i++) {
+            char c = input.charAt(i);
+            output[i] = measurementMap.get(c);
+        }
 
-        Character[] alphaSearch = new Character[]{'a','b','c','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','y','v','w','h','y', 'z'};
-
-        Set<Set<Character>> input1 = new HashSet<>();
-        input1.add('a');
-
-        if()
-
-
-
-
-
-
-
-
+        return output;
     }
 }
